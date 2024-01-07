@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notepad App</title>
+    <!-- Linking CSS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="myHeader">
+      <div class="headerElementWrap">
+        <button id="menubuttonLeft">&#9776;</button>
+        <h2>Logo</h2>
+        <button id="menubuttonRight">&#9776;</button>
+      </div>
+    </header>
+    <div id="leftNavWrap">
+      <ul class="horizontalMenu2">
+        <li><a href="#" class="home">Home</a></li>
+        <li><a href="#">Previous History</a></li>
+        <li><a href="#">Employee Attendance</a></li>
+        <li><a href="#">Daily Notes</a></li>
+      </ul>
+    </div>
+    <div id="RightNavWrap">
+      <ul class="verticalMenu2">
+        <li><a href="#">Notes</a></li>
+        <li><a href="#">Salary Amount</a></li>
+        <li><a href="#">Total Employee</a></li>
+      </ul>
+    </div>
+
+    <section>
+      <div class="dashboardWrap">
+        <div class="dashboardLeft">
+          <div class="logoWrap">
+            <h2>LOGO</h2>
+          </div>
+          <div class="dashboardMenuWrap">
+            <!-- Vertical navigation menu -->
+            <ul class="verticalMenu">
+              <li><a href="#">Notes</a></li>
+              <li><a href="#">Salary Amount</a></li>
+              <li><a href="#">Total Employee</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="dashboardRight">
+          <div class="menuWrap">
+            <!-- Horizontal navigation menu -->
+            <ul class="horizontalMenu">
+              <li><a href="#" class="home">Home</a></li>
+              <li><a href="#">Previous History</a></li>
+              <li><a href="#">Employee Attendance</a></li>
+              <li><a href="#">Daily Notes</a></li>
+            </ul>
+          </div>
+
+          <!-- Adding the form with a textarea and submit button -->
+          <form class="notepadForm">
+            <textarea
+              id="notepadTextarea"
+              name="notepadTextarea"
+              placeholder="Write Your Notes"
+              cols="50"
+              rows="30"
+            ></textarea>
+            <button type="submit" class="save">Save</button>
+          </form>
+          <!-- Display area for submitted data -->
+          <div id="displayData"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Linking JavaScript file -->
+    <script src="./app.js"></script>
+  </body>
+</html>

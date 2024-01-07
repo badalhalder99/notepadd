@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+.dashboardWrap {
+  display: flex;
+}
+.menuWrap ul {
+  list-style: none;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: #ddd;
+  height: 50px;
+}
+ul li a {
+  color: black;
+  text-decoration: none;
+  margin-right: 20px;
+}
+h2 {
+  color: black;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+.menuWrap ul li {
+  margin: 0 10px;
+}
+.menuWrap ul li:last-child {
+  margin: 0;
+}
+.home {
+  color: green;
+}
+.dashboardWrap {
+  display: flex;
+}
+.dashboardLeft {
+  width: 15%;
+  background: #ddd;
+  height: 100vh;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .dashboardLeft {
+    width: 20%;
+  }
+  .dashboardRight {
+    width: 80%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .dashboardLeft {
+    width: 25%;
+  }
+  .dashboardRight {
+    width: 75%;
+  }
+}
+.dashboardRight {
+  width: 85%;
+}
+.dashboardMenuWrap ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+.dashboardMenuWrap ul li {
+  margin-bottom: 7px;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+.save {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.myHeader {
+  display: none;
+}
+.notepadForm {
+  padding: 20px;
+}
+#leftNavWrap {
+  display: none;
+}
+#RightNavWrap {
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .myHeader {
+    display: block;
+  }
+  .headerElementWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background: #99bddc;
+    padding: 0 20px;
+  }
+  .headerElementWrap h2 {
+    margin: 0;
+  }
+  .headerElementWrap button {
+    width: 25px;
+    height: 25px;
+  }
+  .dashboardLeft {
+    display: none;
+  }
+  .menuWrap {
+    display: none;
+  }
+  .dashboardRight {
+    width: 100%;
+  }
+  #leftNavWrap.show,
+  #RightNavWrap.show {
+    display: block !important;
+  }
+  .show {
+    display: block !important;
+  }
+}
+.horizontalMenu2, .verticalMenu2 {
+  padding-left: 20px;
+  list-style: none;
+  background: #99bddc;
+  padding-bottom: 10px;
+}
+.horizontalMenu2 li, .verticalMenu2 li {
+  margin-bottom: 3px;
+}
+.horizontalMenu2 li:first-child , .verticalMenu2 li:first-child{
+  padding-top: 15px;
+}
